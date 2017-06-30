@@ -3,27 +3,33 @@
 	<data>
 		<template id="snippet_testimonial" name="Testimonial snippet">
 			<section class="snippet_testimonial">
-				<div class="container text-center">
-					<div class="row">
-						<div class="col-md-4">
-							<img class"img-circle" src="/theme_one/static/src/img/Steve-Jobs.jpg" alt="client"/>
-							<h3>Client Name</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolorem.</p>
-						</div>
-						<div class="col-md-4">
-							<img class"img-circle" src="/theme_one/static/src/img/bill-gates.jpg" alt="client"/>
-							<h3>Client Name</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolorem.</p>
-						</div>
-						<div class="col-md-4">
-							<img class"img-circle" src="/theme_one/static/src/img/linus_torvals.jpg" alt="client"/>
-							<h3>Client Name</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolorem.</p>
-						</div>
-					</div>
-				</div>
+			    <div class="container text-center">
+			      	<div class="row">
+			        	<div class="col-md-4">
+			          		<img alt="client" class="img-circle" src="/theme_one/static/src/img/Steve-Jobs.jpg"/>
+				          	<h3>Client Name</h3>
+				          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			        	</div>
+				        <div class="col-md-4">
+				        	<img alt="client" class="img-circle" src="/theme_one/static/src/img/bill-gates.jpg"/>
+				          	<h3>Client Name</h3>
+				          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				        </div>
+			        	<div class="col-md-4">
+			          		<img alt="client" class="img-circle" src="/theme_one/static/src/img/linus_torvals.jpg"/>
+			          		<h3>Client Name</h3>
+			          		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			        	</div>
+			      	</div>
+			    </div>
 			</section>
-			
 		</template>
+
+		<template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
+		  	<xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+		    	<t t-snippet="theme_one.snippet_testimonial" t-thumbnail="/theme_one/static/src/img/ui/snippet_thumb.jpg"/>
+		  	</xpath>
+		</template>
+
 	</data>
 </odoo>

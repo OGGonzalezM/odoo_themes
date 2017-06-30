@@ -5,7 +5,6 @@
 			<xpath expr="link[last()]" position="after">
 				<link rel="stylesheet" href="/theme_one/static/less/style.less" type="text/less"/>
 			</xpath>
-			
 		</template>
 	</data>
 </odoo>
